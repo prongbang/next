@@ -62,7 +62,7 @@ var h = hub{
 	unregister:  make(chan *connection),
 	connections: make(map[*connection]bool),
 }
-
+ 
 func (h *hub) run() {
 	for {
 		select {
