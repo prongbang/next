@@ -99,7 +99,7 @@ func (dao *DaoConfig) FindById(id uint32) structs.Event {
 	return result
 }
 
-func (dao *DaoConfig) save(inf interface{}, collection string) int {
+func (dao *DaoConfig) Save(inf interface{}, collection string) int {
 	status := 1
 	session := dao.m.NewSession()
 	c := dao.m.NewCollection(session, collection)
